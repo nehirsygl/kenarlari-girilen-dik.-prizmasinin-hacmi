@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp25
+{
+    internal class Program
+    {
+        /* Klavyeden kenarları girilen dikdörtgenler prizmasının hacmini hesaplayan C# kodu
+         */
+        static void Main(string[] args)
+        {
+            double kk, uk, h, hacim;
+            Console.Write("Dikdörtgen prizmanın uzun kenarını girin: ");
+            uk = Convert.ToDouble(Console.ReadLine());
+            
+            Console.Write("Dikdörtgen prizmanın kısa kenarını girin: ");
+            kk = Convert.ToDouble(Console.ReadLine());
+           
+            Console.Write("Dikdörtgen prizmanın yüksekliğini kenarını girin: ");
+            h = Convert.ToDouble(Console.ReadLine());
+
+            hacim = kk * uk * h;
+            Console.WriteLine("Dikdörtgenler prizmasının hacmi:" + hacim);
+
+
+
+
+        }
+    }
+}
